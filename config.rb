@@ -2,8 +2,8 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-["papillard", "ssaunier", "monsieurpaillard"].each do |name|
-  proxy "/flats/#{name}.html", "/flats/show.html", locals: { owner: name }, ignore: true
+data.flats.each do |owner|
+  proxy "/flats/#{owner.first}.html", "/flats/show.html", locals: { owner: owner.first }, ignore: true
 end
 
 activate :sprockets
