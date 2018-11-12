@@ -1,0 +1,114 @@
+<% flat = data.flats[owner] %>
+
+<div id="flat-banner" class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug  %>');">
+</div>
+
+<div class="wrapper-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+        <div class="header-flat-details">
+          <div class="header-flat-owner text-center">
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle img-small" %>
+            <p><%= flat.name %></p>
+          </div>
+          <div class="header-flat-name">
+            <h6><%= flat.description %></h6>
+            <p><%= flat.city_name %></p>
+            <p class="rating">
+              <i class="fa fa-star" style="color: #ffb400"></i>
+              <i class="fa fa-star" style="color: #ffb400"></i>
+              <i class="fa fa-star" style="color: #ffb400"></i>
+              <i class="fa fa-star" style="color: #ffb400"></i>
+              <i class="fa fa-star" style="color: #ffb400"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="flat-form">
+          <h3>Book this flat</h3>
+          <form action="">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-xs-6">
+                  <input type="text" placeholder="checkin" class="form-control">
+                </div>
+                <div class="col-xs-6">
+                  <input type="text" placeholder="checkout" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <select id="guests" name="guest" class="form-control">
+                <option value="1-guest">1 guest</option>
+                <option value="2-guests">2 guests</option>
+                <option value="3-guests">3 guests</option>
+                <option value="4-guests">4 guests</option>
+                <option value="5-guests">5 guests</option>
+              </select>
+            </div>
+             <input type="submit" value="Book it" class="btn btn-danger form-control">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div id="flat-description">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <h2>About this flat</h2>
+        <p>
+          This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur.
+        </p>
+
+        <hr>
+        <div class="row" id="flat-data">
+          <div class="col-xs-12 col-sm-2">
+            The Space
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li>Accommodates:  <strong>2</strong></li>
+              <li>Bathrooms:  <strong>1</strong></li>
+              <li>Bed type:  <strong>Real Bed</strong></li>
+              <li>Bedrooms:  <strong>1</strong></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li>Beds: <strong>1</strong></li>
+              <li>Property type: <strong>Apartment</strong></li>
+              <li>Room type: <strong>Entire home/apt</strong></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row" id="flat-data">
+          <div class="col-xs-12 col-sm-2">
+            Amenities
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li><i class="fa fa-cutlery"></i><strong>Kitchen</strong></li>
+              <li><i class="fa fa-wifi"></i><strong>Wifi</strong></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li><i class="fa fa-desktop"></i><strong>TV</strong></li>
+              <li><i class="fa fa-glass"></i><strong>Welcome drink</strong></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
